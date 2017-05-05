@@ -7,6 +7,8 @@ This module has been adapting by *Mefistophell Nill* (**8sun Empire**) especiall
 
 Tested on Opencart 2.0. If you find an error, let us know.
 
+Version: 0.1.1
+
 ## Install
 1. You need copy the files to `/system/helper/` directory.
 
@@ -38,6 +40,6 @@ Just using Helpers into your template files. You may get something following:
 ...
 ```
 
-The full list features you may looking on Yii2 reference: http://www.yiiframework.com/doc-2.0/yii-helpers-html.html
+The full list of features you may looking on Yii2 reference: http://www.yiiframework.com/doc-2.0/yii-helpers-html.html
 
 However, please note that given classes do not have all the features!
