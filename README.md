@@ -1,13 +1,15 @@
 # opencart-html-helper
 Opencart Html Helper provides a set of static methods for generating commonly used HTML tags.
 ###
-This module from Yii2 Framework is adapted by *Mefistophell Nill* and *Zoturn* (**8sun Empire**) especially for OpenCart.
+This module from Yii2 Framework is adapted by [Mefistophell Nill](https://github.com/Mefistophell) and [Zoturn](https://github.com/Zoturn) (**8sun Empire**) especially for OpenCart.
 
->WARNING: Not all methods are tested for today!
+>This module includes another module from Yii2, which we adapted and you can use it separately. Link on the module and on is below.
+
+>[ArrayHelper](https://github.com/8sun/opencart-array-helper) - provides additional array functionality that you can use in your application.
 
 Tested on Opencart 2.0. If you find an error, let us know.
 
-Version: 0.8.0
+Version: 0.9.0
 
 ## Install
 1. You need copy the files to `/system/helper/` directory.

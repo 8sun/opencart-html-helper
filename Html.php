@@ -290,6 +290,66 @@ class Html
         }
         return "<!--[if $condition]>\n" . $content . "\n<![endif]-->";
     }
+    
+        /**
+     * Generates a form start tag.
+     * @param array|string $action the form action URL. This parameter will be processed by [[Url::to()]].
+     * @param string $method the form submission method, such as "post", "get", "put", "delete" (case-insensitive).
+     * Since most browsers only support "post" and "get", if other methods are given, they will
+     * be simulated using "post", and a hidden input will be added which contains the actual method type.
+     * See [[\yii\web\Request::methodParam]] for more details.
+     * @param array $options the tag options in terms of name-value pairs. These will be rendered as
+     * the attributes of the resulting tag. The values will be HTML-encoded using [[encode()]].
+     * If a value is null, the corresponding attribute will not be rendered.
+     * See [[renderTagAttributes()]] for details on how attributes are being rendered.
+     *
+     * Special options:
+     *
+     *  - `csrf`: whether to generate the CSRF hidden input. Defaults to true.
+     *
+     * @return string the generated form start tag.
+     * @see endForm()
+     */
+    public static function beginForm($action = '', $method = 'post', $options = [])
+    {
+        $action = self::url($action);
+
+        $hiddenInputs = [];
+        if (!strcasecmp($method, 'get') && ($pos = strpos($action, '?')) !== false) {
+            // query parameters in the action are ignored for GET method
+            // we use hidden fields to add them back
+            foreach (explode('&', substr($action, $pos + 1)) as $pair) {
+                if (($pos1 = strpos($pair, '=')) !== false) {
+                    $hiddenInputs[] = static::hiddenInput(
+                        urldecode(substr($pair, 0, $pos1)),
+                        urldecode(substr($pair, $pos1 + 1))
+                    );
+                } else {
+                    $hiddenInputs[] = static::hiddenInput(urldecode($pair), '');
+                }
+            }
+            $action = substr($action, 0, $pos);
+        }
+
+        $options['action'] = $action;
+        $options['method'] = $method;
+        $form = static::beginTag('form', $options);
+        if (!empty($hiddenInputs)) {
+            $form .= "\n" . implode("\n", $hiddenInputs);
+        }
+
+        return $form;
+    }
+
+    /**
+     * Generates a form end tag.
+     * @return string the generated tag
+     * @see beginForm()
+     */
+    public static function endForm()
+    {
+        return '</form>';
+    }
 
     /**
      * Generates a hyperlink tag.

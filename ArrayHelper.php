@@ -616,7 +616,7 @@ class ArrayHelper
     public static function htmlEncode($data, $valuesOnly = true, $charset = null)
     {
         if ($charset === null) {
-            $charset = Yii::$app ? Yii::$app->charset : 'UTF-8';
+            $charset = 'UTF-8';
         }
         $d = [];
         foreach ($data as $key => $value) {
