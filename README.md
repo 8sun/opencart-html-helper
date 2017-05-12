@@ -3,7 +3,7 @@ Opencart Html Helper provides a set of static methods for generating commonly us
 ###
 This module from Yii2 Framework is adapted by [Mefistophell Nill](https://github.com/Mefistophell) and [Zoturn](https://github.com/Zoturn) (**8sun Empire**) especially for OpenCart.
 
->This module includes another module from Yii2, which we adapted and you can use it separately. Link on the module and on is below.
+>This module includes another module from Yii2, which we adapted and you can use it separately. Link on the module is below.
 
 >[ArrayHelper](https://github.com/8sun/opencart-array-helper) - provides additional array functionality that you can use in your application.
 
@@ -36,8 +36,8 @@ Just use Helpers into your template files. You may get something following:
 </td>
 <td>
   <?php echo Html::button(
-    Html::tag("i", "", ["class" => "fa fa-minus-circle"]), 
-    ["class" => "btn btn-danger", "title" => "Delete"]) ?>
+  Html::tag("i", "", ["class" => "fa fa-minus-circle"]), 
+  ["class" => "btn btn-danger", "title" => "Delete"]) ?>
 </td>
 ...
 ```
@@ -55,6 +55,14 @@ Here is the list of available features
 <tr id="a()">
     <td><a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#a()-detail">a()</a></td>
     <td>Generates a hyperlink tag.</td>
+</tr>
+<tr id="addCssClass()">
+    <td><a href="yii-helpers-basehtml.html#addCssClass()-detail">addCssClass()</a></td>
+    <td>Adds a CSS class (or several classes) to the specified options.</td>
+</tr>
+<tr id="addCssStyle()">
+    <td><a href="yii-helpers-basehtml.html#addCssStyle()-detail">addCssStyle()</a></td>
+    <td>Adds the specified CSS style to the HTML options.</td>
 </tr>
 <tr id="beginForm()">
     <td><a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#beginForm()-detail">beginForm()</a></td>
@@ -167,6 +175,16 @@ Here is the list of available features
 <tr id="radioList()">
     <td><a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#radioList()-detail">radioList()</a></td>
     <td>Generates a list of radio buttons.</td>
+</tr>
+<tr id="removeCssClass()">
+    <td><a href="yii-helpers-basehtml.html#removeCssClass()-detail">removeCssClass()</a></td>
+    <td>Removes a CSS class from the specified options.</td>
+    <td><a href="yii-helpers-basehtml.html">yii\helpers\BaseHtml</a></td>
+</tr>
+<tr id="removeCssStyle()">
+    <td><a href="yii-helpers-basehtml.html#removeCssStyle()-detail">removeCssStyle()</a></td>
+    <td>Removes the specified CSS style from the HTML options.</td>
+    <td><a href="yii-helpers-basehtml.html">yii\helpers\BaseHtml</a></td>
 </tr>
 <tr id="resetButton()">
     <td><a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#resetButton()-detail">resetButton()</a></td>
