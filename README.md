@@ -57,11 +57,11 @@ Here is the list of available features
     <td>Generates a hyperlink tag.</td>
 </tr>
 <tr id="addCssClass()">
-    <td><a href="yii-helpers-basehtml.html#addCssClass()-detail">addCssClass()</a></td>
+    <td><a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#addCssClass()-detail">addCssClass()</a></td>
     <td>Adds a CSS class (or several classes) to the specified options.</td>
 </tr>
 <tr id="addCssStyle()">
-    <td><a href="yii-helpers-basehtml.html#addCssStyle()-detail">addCssStyle()</a></td>
+    <td><a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#addCssStyle()-detail">addCssStyle()</a></td>
     <td>Adds the specified CSS style to the HTML options.</td>
 </tr>
 <tr id="beginForm()">
@@ -177,14 +177,12 @@ Here is the list of available features
     <td>Generates a list of radio buttons.</td>
 </tr>
 <tr id="removeCssClass()">
-    <td><a href="yii-helpers-basehtml.html#removeCssClass()-detail">removeCssClass()</a></td>
+    <td><a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#removeCssClass()-detail">removeCssClass()</a></td>
     <td>Removes a CSS class from the specified options.</td>
-    <td><a href="yii-helpers-basehtml.html">yii\helpers\BaseHtml</a></td>
 </tr>
 <tr id="removeCssStyle()">
-    <td><a href="yii-helpers-basehtml.html#removeCssStyle()-detail">removeCssStyle()</a></td>
+    <td><a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#removeCssStyle()-detail">removeCssStyle()</a></td>
     <td>Removes the specified CSS style from the HTML options.</td>
-    <td><a href="yii-helpers-basehtml.html">yii\helpers\BaseHtml</a></td>
 </tr>
 <tr id="resetButton()">
     <td><a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#resetButton()-detail">resetButton()</a></td>
