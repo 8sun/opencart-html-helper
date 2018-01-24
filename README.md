@@ -226,6 +226,6 @@ Here is a list of available features
 </tr>
 </tbody></table>
 
-A full list of the features you can find in Yii2 reference: http://www.yiiframework.com/doc-2.0/yii-helpers-html.html
+A full list of the features you can find on Yii2 reference: http://www.yiiframework.com/doc-2.0/yii-helpers-html.html
 
 However, please note that given classes do not have all the features!
