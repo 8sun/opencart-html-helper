@@ -1,20 +1,20 @@
 # opencart-html-helper
 Opencart Html Helper provides a set of static methods for generating commonly used HTML tags.
 ###
-This module from Yii2 Framework is adapted by [Mefistophell Nill](https://github.com/Mefistophell) and [Zoturn](https://github.com/Zoturn) (**8sun Empire**) especially for OpenCart.
+This module from Yii2 Framework is adapted by [Mefistophell Nill](https://github.com/Mefistophell) and [Zoturn](https://github.com/Zoturn) (**8sun Empire**) for OpenCart.
 
->This module includes another module from Yii2, which we adapted and you can use it separately. Link on the module is below.
+>This module includes another module from Yii2, which we adapted and you can use it separately. The link to the module is shown below.
 
 >[ArrayHelper](https://github.com/8sun/opencart-array-helper) - provides additional array functionality that you can use in your application.
 
 Tested on Opencart 2.0. If you find an error, let us know.
 
-Version: 0.9.0
+Version: 0.9.1
 
 ## Install
-1. You need copy the files to `/system/helper/` directory.
+1. You need to copy the files to the directory `/system/helper/`.
 
-2. Further add Helpers to `/system/startup.php` how is shown below:
+2. Further, add the Helpers to `/system/startup.php` as shown below:
 
 ```
 require_once(DIR_SYSTEM . 'helper/Html.php');
@@ -24,7 +24,7 @@ require_once(DIR_SYSTEM . 'helper/InvalidParamException.php');
 ```
 
 ## Usage
-Just use Helpers into your template files. You may get something following:
+Just use the Helpers in your template files. You can get something like this:
 
 ```
 ...
@@ -42,7 +42,7 @@ Just use Helpers into your template files. You may get something following:
 ...
 ```
 
-Here is the list of available features
+Here is a list of available features
 
 <table>
     <colgroup>
@@ -226,6 +226,6 @@ Here is the list of available features
 </tr>
 </tbody></table>
 
-The full list of the features you may find on Yii2 reference: http://www.yiiframework.com/doc-2.0/yii-helpers-html.html
+A full list of the features you can find in Yii2 reference: http://www.yiiframework.com/doc-2.0/yii-helpers-html.html
 
 However, please note that given classes do not have all the features!
